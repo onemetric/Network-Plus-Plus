@@ -170,7 +170,9 @@ namespace NetworkPlusPlus
                     }
 
                     System.IO.Directory.CreateDirectory(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "NetworkPlusPlus"));
-                    System.IO.File.Create(configFile);
+                    System.IO.FileStream fs = System.IO.File.Create(configFile);
+                    fs.Close();
+
                 }
 
             }
