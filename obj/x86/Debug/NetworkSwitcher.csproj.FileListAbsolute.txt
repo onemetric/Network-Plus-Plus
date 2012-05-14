@@ -1,0 +1,23 @@
+C:\Users\Peter\AppData\Local\Temporary Projects\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Peter\AppData\Local\Temporary Projects\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Peter\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Peter\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\NetworkSwitcher.Main.resources
+C:\Users\Peter\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\NetworkSwitcher.Properties.Resources.resources
+C:\Users\Peter\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Peter\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Peter\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\Peter\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\Peter\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\NetworkSwitcher.frmAddProfile.resources
+C:\Users\Peter\Documents\Visual Studio 2010\Projects\NetworkSwitcher\NetworkSwitcher\bin\Debug\NetworkSwitcher.exe
+C:\Users\Peter\Documents\Visual Studio 2010\Projects\NetworkSwitcher\NetworkSwitcher\bin\Debug\NetworkSwitcher.pdb
+C:\Users\Peter\Documents\Visual Studio 2010\Projects\NetworkSwitcher\NetworkSwitcher\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Peter\Documents\Visual Studio 2010\Projects\NetworkSwitcher\NetworkSwitcher\obj\x86\Debug\NetworkSwitcher.frmAddProfile.resources
+C:\Users\Peter\Documents\Visual Studio 2010\Projects\NetworkSwitcher\NetworkSwitcher\obj\x86\Debug\NetworkSwitcher.Main.resources
+C:\Users\Peter\Documents\Visual Studio 2010\Projects\NetworkSwitcher\NetworkSwitcher\obj\x86\Debug\NetworkSwitcher.Properties.Resources.resources
+C:\Users\Peter\Documents\Visual Studio 2010\Projects\NetworkSwitcher\NetworkSwitcher\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Peter\Documents\Visual Studio 2010\Projects\NetworkSwitcher\NetworkSwitcher\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Peter\Documents\Visual Studio 2010\Projects\NetworkSwitcher\NetworkSwitcher\obj\x86\Debug\NetworkSwitcher.exe
+C:\Users\Peter\Documents\Visual Studio 2010\Projects\NetworkSwitcher\NetworkSwitcher\obj\x86\Debug\NetworkSwitcher.pdb
+C:\Users\Peter\Documents\Visual Studio 2010\Projects\NetworkSwitcher\NetworkSwitcher\obj\x86\Debug\NetworkSwitcher.ChangeProfiles.resources
+C:\Users\Peter\documents\visual studio 2010\Projects\NetworkSwitcher\NetworkSwitcher\obj\x86\Debug\NetworkSwitcher.Details.resources
+C:\Users\Peter\documents\visual studio 2010\Projects\NetworkSwitcher\NetworkSwitcher\obj\x86\Debug\NetworkSwitcher.About.resources
