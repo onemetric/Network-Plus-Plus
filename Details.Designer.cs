@@ -69,7 +69,7 @@
             // 
             this.lblDetails.AutoSize = true;
             this.lblDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDetails.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblDetails.ForeColor = System.Drawing.Color.Black;
             this.lblDetails.Location = new System.Drawing.Point(8, 64);
             this.lblDetails.Name = "lblDetails";
             this.lblDetails.Size = new System.Drawing.Size(104, 16);
