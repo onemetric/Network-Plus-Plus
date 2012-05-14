@@ -69,7 +69,8 @@ namespace NetworkPlusPlus
         public static void saveProfiles()
         {
 
-            string configFile = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "NetworkPlusPlus", "config.xml");
+            string configFile = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "NetworkPlusPlus");
+            configFile = System.IO.Path.Combine(configFile, "config.xml");
             System.Xml.XmlWriter writer = System.Xml.XmlWriter.Create(configFile);
             writer.WriteStartDocument();
 

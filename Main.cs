@@ -79,14 +79,16 @@ namespace NetworkPlusPlus
         public void loadProfiles()
         {
 
-            string configFile = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "NetworkPlusPlus", "config.xml");
-            
+            string configFile = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "NetworkPlusPlus");
+            configFile = System.IO.Path.Combine(configFile, "config.xml");
+
             try
             {
 
                 XmlDocument xmlDoc = new XmlDocument(); //* create an xml document object.
                 xmlDoc.Load(configFile);
-
+                
+                
                 XmlNodeList profileslist = xmlDoc.GetElementsByTagName("Profile");
 
                 for (int i = 0; i < profileslist.Count; i++)
@@ -159,7 +161,8 @@ namespace NetworkPlusPlus
                 {
                     if (System.IO.File.Exists(configFile))
                     {
-                        string profileBak = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "NetworkPlusPlus", "config" + DateTime.Now.ToString("ddMMyyHHmm") + ".xml.bak");
+                        string profileBak = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "NetworkPlusPlus");
+                        profileBak = System.IO.Path.Combine(profileBak, "config" + DateTime.Now.ToString("ddMMyyHHmm") + ".xml.bak");
 
                         MessageBox.Show("The configuration file was found but is corrupt. Creating new configuration file. All profiles have been lost");
                         System.IO.File.Copy(configFile, profileBak, true);
@@ -171,6 +174,8 @@ namespace NetworkPlusPlus
                 }
 
             }
+
+            
 
         }
 
