@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkPlusPlus", "NetworkPlusPlus.csproj", "{FFAD0F25-5AC2-4D67-808F-2024A8600C7F}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "NetworkPlusPlus-Installer", "..\NetworkPlusPlus-Installer\NetworkPlusPlus-Installer.vdproj", "{13AEB67E-8AE5-4564-8796-44DFA54B042A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,8 +13,6 @@ Global
 		{FFAD0F25-5AC2-4D67-808F-2024A8600C7F}.Debug|x86.Build.0 = Debug|x86
 		{FFAD0F25-5AC2-4D67-808F-2024A8600C7F}.Release|x86.ActiveCfg = Release|x86
 		{FFAD0F25-5AC2-4D67-808F-2024A8600C7F}.Release|x86.Build.0 = Release|x86
-		{13AEB67E-8AE5-4564-8796-44DFA54B042A}.Debug|x86.ActiveCfg = Debug
-		{13AEB67E-8AE5-4564-8796-44DFA54B042A}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
