@@ -206,6 +206,16 @@ namespace NetworkPlusPlus
                                 inter[i].SubnetMasks = (String[])pd.Value;
                             }
                         }
+                        else if (keyName == "IPEnabled") //XP Doesn't have NetEnabled attribute so use this instead
+                        {
+                            if (pd.Value != null)
+                            {
+                                bool enabled = (bool)pd.Value;
+                                inter[i].Enabled = enabled;
+                            }
+                        }
+
+                    
 
                     }
 

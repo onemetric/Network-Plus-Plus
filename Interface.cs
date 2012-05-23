@@ -315,7 +315,7 @@ namespace NetworkPlusPlus
             {
 
                 object returnVal = mgtObject.InvokeMethod("Enable", null);
-
+                
             }
 
         }

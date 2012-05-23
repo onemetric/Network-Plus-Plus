@@ -42,7 +42,15 @@ namespace NetworkPlusPlus
             
             InitializeComponent();
 
-            ttDisable.SetToolTip(imgDisable, "Disable Interface");
+            if (Environment.OSVersion.Version.Major < 6)
+            {
+                ttDisable.SetToolTip(imgDisable, "Not Supported in Windows XP");
+                disableEnableBtn(true);
+            }
+            else
+            {
+                ttDisable.SetToolTip(imgDisable, "Disable Interface");
+            }
             ttRenew.SetToolTip(imgRenew, "Renew/Release DHCP IP Address");
             ttReload.SetToolTip(btnReload, "Reload Interface");
 
@@ -53,6 +61,7 @@ namespace NetworkPlusPlus
 
             this.Show();
             this.Location = new Point(Screen.PrimaryScreen.WorkingArea.Width - this.Width - 20, Screen.PrimaryScreen.WorkingArea.Height - this.Height - 5);
+            showAction("Loading");
 
             InterfaceName = interfaceName;
             loadInterface(InterfaceName);
@@ -91,10 +100,9 @@ namespace NetworkPlusPlus
                     }
                 }
 
-                
-
-                
             }
+
+            hideAction();
 
         }
 
@@ -192,13 +200,6 @@ namespace NetworkPlusPlus
             hideAction();
         }
 
-        private void btnRenew_Click(object sender, EventArgs e)
-        {
-
-            
-
-        }
-
         private void changeProfile()
         {
 
@@ -237,27 +238,34 @@ namespace NetworkPlusPlus
 
         private void disableInterface()
         {
-            showAction("Disabling Interface");
-            disableControls();
-            currInterface.disableInterface();
-            currInterface.reloadInterface();
-            enableControls();
-            disableBtnInterfaceState(false);
-            displayDetails();
-            hideAction();
+
+            if (Environment.OSVersion.Version.Major >= 6)
+            {
+                showAction("Disabling Interface");
+                disableControls();
+                currInterface.disableInterface();
+                currInterface.reloadInterface();
+                enableControls();
+                disableBtnInterfaceState(false);
+                displayDetails();
+                hideAction();
+            }
         }
 
         private void enableInterface()
         {
-            showAction("Enabling Interface");
-            disableControls();
-            currInterface.enableInterface();
-            System.Threading.Thread.Sleep(2000); //give the interface a couple of seconds to come up
-            currInterface.reloadInterface();
-            enableControls();
-            disableBtnInterfaceState(true);
-            displayDetails();
-            hideAction();
+            if (Environment.OSVersion.Version.Major >= 6)
+            {
+                showAction("Enabling Interface");
+                disableControls();
+                currInterface.enableInterface();
+                System.Threading.Thread.Sleep(2000); //give the interface a couple of seconds to come up
+                currInterface.reloadInterface();
+                enableControls();
+                disableBtnInterfaceState(true);
+                displayDetails();
+                hideAction();
+            }
         }
 
 
@@ -494,13 +502,20 @@ namespace NetworkPlusPlus
                     ttDisable.SetToolTip(imgDisable, "Enable Network Interface");
                 }
             }
-
+            
         }
 
         private void disableEnableBtn(bool state)
         {
-            btnDisableEnabled = !state;
-
+            if (Environment.OSVersion.Version.Major >= 6)
+            {
+                btnDisableEnabled = !state;
+            }
+            else
+            {
+                btnDisableEnabled = false;
+            }
+            
             if (btnDisableEnabled)
             {
                 imgDisable.BackColor = Color.FromArgb(77, 77, 77);
@@ -509,7 +524,7 @@ namespace NetworkPlusPlus
             {
                 imgDisable.BackColor = Color.FromArgb(90, 90, 90);
             }
-
+            
         }
 
         private void disableRenewBtn(bool state)

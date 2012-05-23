@@ -166,7 +166,7 @@ namespace NetworkPlusPlus
 
                         MessageBox.Show("The configuration file was found but is corrupt. Creating new configuration file. All profiles have been lost");
                         System.IO.File.Copy(configFile, profileBak, true);
-
+                        
                     }
 
                     System.IO.Directory.CreateDirectory(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "NetworkPlusPlus"));
@@ -176,8 +176,6 @@ namespace NetworkPlusPlus
                 }
 
             }
-
-            
 
         }
 

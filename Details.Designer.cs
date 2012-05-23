@@ -51,9 +51,8 @@
             this.lblInterfaceName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInterfaceName.Location = new System.Drawing.Point(3, 11);
             this.lblInterfaceName.Name = "lblInterfaceName";
-            this.lblInterfaceName.Size = new System.Drawing.Size(119, 20);
+            this.lblInterfaceName.Size = new System.Drawing.Size(0, 20);
             this.lblInterfaceName.TabIndex = 0;
-            this.lblInterfaceName.Text = "Interface Name";
             // 
             // lblInterfaceDescription
             // 
@@ -61,9 +60,8 @@
             this.lblInterfaceDescription.ForeColor = System.Drawing.Color.Black;
             this.lblInterfaceDescription.Location = new System.Drawing.Point(8, 42);
             this.lblInterfaceDescription.Name = "lblInterfaceDescription";
-            this.lblInterfaceDescription.Size = new System.Drawing.Size(105, 13);
+            this.lblInterfaceDescription.Size = new System.Drawing.Size(0, 13);
             this.lblInterfaceDescription.TabIndex = 1;
-            this.lblInterfaceDescription.Text = "Interface Description";
             // 
             // lblDetails
             // 
@@ -72,9 +70,8 @@
             this.lblDetails.ForeColor = System.Drawing.Color.Black;
             this.lblDetails.Location = new System.Drawing.Point(8, 64);
             this.lblDetails.Name = "lblDetails";
-            this.lblDetails.Size = new System.Drawing.Size(104, 16);
+            this.lblDetails.Size = new System.Drawing.Size(0, 16);
             this.lblDetails.TabIndex = 2;
-            this.lblDetails.Text = "Interface Details";
             // 
             // cbProfiles
             // 
